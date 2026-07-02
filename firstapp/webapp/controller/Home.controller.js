@@ -1,11 +1,12 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast"
+    "sap/m/MessageToast",
+    "sap/m/MessageBox"
 ],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      */
-    function (Controller, MessageToast) {
+    function (Controller, MessageToast, MessageBox) {
         "use strict";
 
         return Controller.extend("com.lab2dev.firstapp.controller.Home", {
@@ -24,7 +25,12 @@ sap.ui.define([
                 const message = `O item "${itemTitle}" foi clicado!`;
 
                 // Exibe uma mensagem na tela
-                MessageToast.show(message);
+                //MessageToast.show(message);
+                
+			    MessageBox.information(message, {
+                    title: "Informação do item"
+                });
+
             }
         });
 });

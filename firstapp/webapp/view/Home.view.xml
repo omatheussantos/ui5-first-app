@@ -3,7 +3,7 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-            <List headerText="Products" headerLevel="H2">
+		<Text text="Products" />
                 <StandardListItem type="Active" press="onPress" title="Arroz" counter="5" />
                 <StandardListItem type="Active" press="onPress" title="Feijão" counter="8" />
                 <StandardListItem type="Active" press="onPress" title="Macarrão" counter="10" />
@@ -14,7 +14,6 @@
                 <StandardListItem type="Active" press="onPress" title="Sal" counter="2" />
                 <StandardListItem type="Active" press="onPress" title="Farinha de Trigo" counter="9" />
                 <StandardListItem type="Active" press="onPress" title="Sabonete" counter="11" />
-            </List>
         </content>
     </Page>
 </mvc:View>
